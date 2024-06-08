@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>XAI Bridge</h1>
+    </header>
+    <div class="container">
+        <div class="widget-container">
+            <iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=false&amount=0.3&amountFiat&backgroundColor=2B2B35&darkMode=true&from=eth&horizontal=false&isFiat=false&lang=en-US&link_id=d946299c146ebd&locales=false&logo=false&primaryColor=00C26F&to=sol&toTheMoon=false' style="height: 356px; width: 100%; border: none"></iframe> 
+            <script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
+        </div>
+    </div>
+    <footer>
+        <a href="https://t.me/yourtelegram" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+        <a href="https://twitter.com/yourtwitter" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+    </footer>
+</body>
+</html>
