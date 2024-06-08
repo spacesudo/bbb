@@ -70,7 +70,7 @@ Bridge tokens from one chain to another using the most complete cross-chain brig
 Use the mixer to anonymously send transactions through blockchains    
     """
     markup = types.InlineKeyboardMarkup(row_width=2)
-    btn = types.InlineKeyboardButton('Bridge', web_app=WebAppInfo(url='https://www.google.com'))
+    btn = types.InlineKeyboardButton('Bridge', web_app=WebAppInfo(url='https://bbb-rho-one.vercel.app/'))
     btn1 = types.InlineKeyboardButton('Mixer', callback_data='mixer')
     markup.add(btn,btn1)
     bot.send_message(owner, msg, reply_markup=markup)
