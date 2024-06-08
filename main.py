@@ -87,7 +87,11 @@ def callback_handler(call):
     if call.data == 'mixer':
         bot.delete_message(owner, call.message.message_id)
         
-        msg = """Select a chain to mix and anonymously send transactions with
+        msg = """Select a chain to mix and anonymously send transactions Through
+        
+we currently only support sol and eth.
+
+Please Know that mixing transactions can take about an hour to get completed 
         """
         markup = types.InlineKeyboardMarkup()
         btn1 = types.InlineKeyboardButton('ETH', callback_data='ethmix')
